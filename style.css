@@ -1,0 +1,211 @@
+body {
+    background-color: #818181;
+}
+section {
+    width: 50%;
+    height: 400px;
+    margin: 0 auto;
+    background-color: #CEC8C0;
+    padding-top: 2em;
+    margin-top: 6em;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px #5C5C5C;
+}
+
+.container {
+    width: 50%;
+}
+
+.button {
+    height: 160px;
+    box-shadow: 0 0 0 13px black;
+}
+
+#button1 {
+    background-color: red;
+    border-top-left-radius: 100%;
+}
+
+#button2 {
+    background-color: green;
+    border-top-right-radius: 100%;
+}
+
+#button3{
+    background-color: blue;
+    border-bottom-left-radius: 100%;
+}
+
+#button4{
+    background-color: yellow;
+    border-bottom-right-radius: 100%;
+}
+
+#settings-panel {
+    top: 85px;
+    left: 90px;
+    padding: 15px;
+    box-shadow: 0 0 0 10px black;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+}
+
+#settings-panel h4 {
+    font-weight: bolder;
+    text-align: center;
+}
+
+#settings-panel .row {
+    padding: 15px;
+}
+
+#start-button-img {
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+#strict-mode-img {
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+#settings-panel p {
+    font-size: 7px;
+    font-weight: bolder;
+}
+
+#board {
+    border-radius: 10%;
+    background-color: black;
+}
+
+#board span {
+    color: red;
+}
+
+#activator {
+    font-size: 0.3rem;
+    font-weight: bolder;
+    margin: 0 auto;
+    padding-top: 15px;
+}
+
+#activator span {
+    font-size: 2em;
+}
+
+#activator div {
+    border: 2px solid black;
+    width: 15px;
+}
+
+#off {
+    background-color: cornflowerblue;
+}
+
+#on {
+    background-color: black;
+}
+
+.activator-button {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border:1px solid black;
+}
+
+#activate {
+    margin: 0;
+    padding: 0;
+}
+
+.col-xs-4.col-md-4.col-sm-4.col-lg-4 {
+    max-height: 30px;
+    padding: 2px;
+    padding-left: 10px;
+    padding-right: 0;
+}
+
+@-webkit-keyframes flash {
+    1% {
+        opacity: 0.5;
+    }
+}
+
+/**
+-- Media Screen qUERIES
+**/
+@media (max-width: 1280px) {
+    section {
+        width: 50%;
+    }
+}
+
+@media (max-width: 980px) {
+    section {
+        width: 80%;
+    }
+    .col-xs-6.col-sm-6.col-md-6.col-lg-6  p {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 800px) {
+    section {
+        width: 80%;
+    }
+    .col-xs-6.col-sm-6.col-md-6.col-lg-6  p {
+        font-size: 1.5em;
+    }
+
+    #settings-panel {
+        left: 80px;
+    }
+}
+
+@media (max-width: 786px) {
+    section {
+        width: 80%;
+    }
+    .col-xs-6.col-sm-6.col-md-6.col-lg-6  p {
+        font-size: 1.5em;
+    }
+
+    #settings-panel {
+        left: 80px;
+    }
+}
+
+@media (max-width: 360px) {
+    section {
+        width: 100%;
+    }
+
+    #settings-panel {
+        left: 70px;
+    }
+
+    #main-container {
+        width: 100%;
+    }
+    .col-xs-6.col-sm-6.col-md-6.col-lg-6 {
+        width: 150px;
+    }
+
+    .col-xs-4.col-sm-4.col-md-4.col-lg-4 {
+        width: 40px;
+    }
+
+    #activator {
+        margin-left: 20px;
+    }
+
+}

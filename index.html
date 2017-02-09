@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>A Simon Game</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!--<script>
+        function colorchange(e) {
+            if (e.style.WebkitAnimationName !== 'flash') {
+                e.style.WebkitAnimationName = 'flash';
+                e.style.WebkitAnimationDuration = '1s';
+
+                // make sure to reset the name after 4 seconds, otherwise another call to colorchange wont have any effect
+                setTimeout(function() {
+                    e.style.WebkitAnimationName = '';
+                }, 100);
+            }
+        }
+    </script>-->
+
+</head>
+<body>
+
+<section id='main'>
+    <div id ='main-container' class='container'>
+        <div class='row'>
+                <div id="button1" class="col-xs-6 col-md-6 col-sm-6 col-lg-6 button"></div>
+                <div id="button2" class="col-xs-6 col-md-6 col-sm-6 col-lg-6 button"></div>
+                <div id="button3" class="col-xs-6 col-md-6 col-sm-6 col-lg-6 button"></div>
+                <div id="button4" class="col-xs-6 col-md-6 col-sm-6 col-lg-6 button"></div>
+
+            <div id="settings-panel" class="container">
+                <h4>Simon.</h4>
+                <div class="row">
+                    <div id="board" class="col-xs-4 col-md-4 col-sm-4 col-lg-4">
+                        <span id="score-board"></span>
+                    </div>
+                    <div id="start-button" class="col-xs-4 col-md-4 col-sm-4 col-lg-4">
+                        <div id="start-button-img"></div><p>START</p>
+                    </div>
+                    <div id="strict-mode" class="col-xs-4 col-md-4 col-sm-4 col-lg-4">
+                        <div id="strict-mode-img"></div><p>STRICT</p>
+                    </div>
+
+                    <div id="activator" class="col-xs-12 col-md-12 col-sm-12 col-lg-10">
+                        <span>Off </span> <div id="off" class="activator-button"> </div> <div id="on" class="activator-button"> </div><span> On</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- <div onclick="colorchange(this)" style="height: 100px; background-color: green;">The trick goes here...</div> -->
+<script src="simon.js"></script>
+</body>
+</html>
+
+
+<!-- http://stackoverflow.com/questions/4358892/how-to-activate-a-css3-webkit-animation-using-javascript -->
